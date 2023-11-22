@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/yumeat/static/css/main.2dff32b4.css",
+    "main.js": "/yumeat/static/js/main.ad6e0a42.js",
+    "static/js/787.966c427b.chunk.js": "/yumeat/static/js/787.966c427b.chunk.js",
+    "index.html": "/yumeat/index.html",
+    "main.2dff32b4.css.map": "/yumeat/static/css/main.2dff32b4.css.map",
+    "main.ad6e0a42.js.map": "/yumeat/static/js/main.ad6e0a42.js.map",
+    "787.966c427b.chunk.js.map": "/yumeat/static/js/787.966c427b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2dff32b4.css",
+    "static/js/main.ad6e0a42.js"
+  ]
+}
