@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { mealData } from './data'
+import { FoodItem } from './foodItem';
+
 const OurMeal = () => {
  
   const [foods,setFoods]=useState(mealData);
+  
   const filterCat=(category)=>{
   setFoods(mealData.filter((item)=>{
     return item.category===category})
@@ -22,20 +25,8 @@ const OurMeal = () => {
         
     
       <div className='grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-4 gap-6'>
-      {foods.map((item)=>(
-        <div className='flex flex-col py-4 justify-start'>
-            
-          <div className='' >
-              <img className='relative w-[300px] h-[200px] object-cover rounded-2xl hover:scale-105 ease-out duration-100' src={item.image} alt=""/>
-              
-               <p className='absolute bg-orange-700 h-18 w-18 rounded-full px-2 py-3 text-[15px] text-white border-8 -mt-10 ml-60'>{item.price}</p>
-              
-          </div>
-          <div className='flex flex-col font-bold  text-[18px] justify-start '>
-              <p> {item.name}</p>  
-                
-          </div>
-        </div>
+      {foods.map((item,index)=>(
+        <FoodItem item={item}  id={item.id}/>
         ))}
       </div>
     </div>
