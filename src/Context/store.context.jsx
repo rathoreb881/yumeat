@@ -53,13 +53,14 @@ const subTotal = (cartItems) => {
     let total = 0;
     for(const Itemid in cartItems){
         if(cartItems[Itemid]>0){
-           let itemInfo = foodItems.find((product)=>product.id===Itemid)
-                
-                total+=itemInfo.price*cartItems[Itemid]
-        } 
+            
+            let itemInfo = foodItems.find((product)=>product.id!==Itemid)
+           
+           total+=itemInfo.price*cartItems[Itemid]
      } 
      return total;
     }
+}
 
 
 const menuDismiss=TopNav;
